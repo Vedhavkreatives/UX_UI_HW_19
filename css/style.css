@@ -1,0 +1,152 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "flowers Animals Landscapes"
+  "people products others"
+   ;
+}
+
+#flowers {
+  grid-area: flowers;
+  background-image: url("/images/rose.JPG");
+
+}
+#Animals{
+  grid-area: Animals;
+  background-image: url("/images/image_72192707.JPG");
+}
+
+#Landscapes{
+  grid-area: Landscapes;
+  background-image: url("/images/landscape.JPG");
+}
+
+#people {
+  grid-area: people;
+  background-image: url("/images/portrait.jpg");
+}
+
+#products {
+  grid-area: products;
+  background-image: url("/images/product.JPG");
+}
+
+#others{
+    grid-area: others;
+    background-image: url("/images/others.JPG");
+  }
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-color: #6b6d6b;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  border-bottom: 5px solid #51c24e;
+}
+
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+.highlight {
+  color: #51c24e;
+  font-weight: 700;
+}
+
+footer{
+  text-align: center;
+  background: black;
+  color:white;
+}
+
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #51c24e;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
+
+@media only screen and (max-width: 600px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+ 
+}
+
